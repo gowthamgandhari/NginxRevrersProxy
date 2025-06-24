@@ -1,0 +1,27 @@
+server {
+    listen 8080 default_server;
+    listen [::]:8080 default_server;
+
+    server_name _;
+
+    root /var/www/html;
+    index index.html index.nginx-debian.html;
+
+    location /server1/ {
+        rewrite ^/server1(/.*)$ $1 break;
+        proxy_pass http://localhost:8001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /server2/ {
+        rewrite ^/server2(/.*)$ $1 break;
+        proxy_pass http://localhost:8002;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
