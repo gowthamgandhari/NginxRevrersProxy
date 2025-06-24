@@ -7,10 +7,11 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		jsonResponse(w, map[string]string{
-			"status":  "ok",
-			"service": "1",
+			"info":    "Welcome to Service 1",
+			"routes":  "/ping, /hello",
+			"status":  "active",
 		})
 	})
 
