@@ -13,7 +13,7 @@ func main() {
 			"routes":  "/ping, /hello",
 			"status":  "active",
 		})
-	})
+	}) 
 
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
 		jsonResponse(w, map[string]string{
