@@ -6,7 +6,7 @@ services:
       context: ./nginx
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8080:80"
     depends_on:
       - server1
       - server2
