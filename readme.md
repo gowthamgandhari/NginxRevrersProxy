@@ -1,4 +1,4 @@
-### 🧪 **DevOps Intern Assignment: Nginx Reverse Proxy + Docker**
+![image](https://github.com/user-attachments/assets/e0d48256-8a11-4744-843c-86fb7c00c91f)### 🧪 **DevOps Intern Assignment: Nginx Reverse Proxy + Docker**
 
 # 🚀 Multi-Service App with Nginx Reverse Proxy
 
