@@ -2,6 +2,8 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+logging.basicConfig(level=logging.INFO) 
+
 @app.route("/")
 def index():
     return jsonify(message="Welcome to Service 2", available_routes=["/ping", "/hello"])

@@ -2,25 +2,30 @@ version: "3.8"
 
 services:
   nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
+    build: ./nginx
     ports:
       - "8080:80"
     depends_on:
-      - server1
-      - server2
+      - service_1
+      - service_2
 
-  server1:
-    image: nginx:alpine
-    expose:
-      - "80"
-    volumes:
-      - ./server1:/usr/share/nginx/html
+  service_1:
+    build: ./service_1
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
 
-  server2:
-    image: nginx:alpine
-    expose:
-      - "80"
-    volumes:
-      - ./server2:/usr/share/nginx/html
+  service_2:
+    build: ./service_2
+    ports:
+      - "8002:8002"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
