@@ -29,19 +29,6 @@ This project demonstrates a microservices setup using:
 └── readme.md
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 4 directories, 10 files
 
 ---
