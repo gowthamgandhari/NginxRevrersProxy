@@ -14,19 +14,20 @@ This project demonstrates a microservices setup using:
 ## 📁 Project Structure
 
 ├── compose
-│   ├── docker-compose.yml
-│   ├── nginx
-│   │   ├── Dockerfile
-│   │   └── nginx.conf
-│   ├── service_1
-│   │   ├── Dockerfile
-│   │   └── main.go
-│   └── service_2
-│       ├── Dockerfile
-│       ├── app.py
-│       ├── pyproject.toml
-│       └── uv.lock
+│   ├── docker-compose.yml
+│   ├── nginx
+│   │   ├── Dockerfile
+│   │   └── nginx.conf
+│   ├── service_1
+│   │   ├── Dockerfile
+│   │   └── main.go
+│   └── service_2
+│       ├── Dockerfile
+│       ├── app.py
+│       ├── pyproject.toml
+│       └── uv.lock
 └── readme.md
+
 
 
 4 directories, 10 files
