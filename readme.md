@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e0d48256-8a11-4744-843c-86fb7c00c91f)### 🧪 **DevOps Intern Assignment: Nginx Reverse Proxy + Docker**
+### 🧪 **DevOps Intern Assignment: Nginx Reverse Proxy + Docker**
 
 # 🚀 Multi-Service App with Nginx Reverse Proxy
 
@@ -13,20 +13,7 @@ This project demonstrates a microservices setup using:
 
 ## 📁 Project Structure
 
-├── compose
-│   ├── docker-compose.yml
-│   ├── nginx
-│   │   ├── Dockerfile
-│   │   └── nginx.conf
-│   ├── service_1
-│   │   ├── Dockerfile
-│   │   └── main.go
-│   └── service_2
-│       ├── Dockerfile
-│       ├── app.py
-│       ├── pyproject.toml
-│       └── uv.lock
-└── readme.md
+![image](https://github.com/user-attachments/assets/e4516817-9678-4c00-b0c5-f989a40650a0)
 
 
 4 directories, 10 files
